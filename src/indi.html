@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Audio Player</title>
+  <style>
+    .radio-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    #audioplayer {
+      margin-top: 20px;
+    }
+
+    #audio {
+      margin-top: 10px;
+    }
+
+    #sentence-text {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <p>Please select Sentence Number:</p>
+  <div class="radio-row">
+    <input type="radio" id="audio1" name="sentence" value="./assests/media1/audio1.mp3">
+    <label for="audio1">Sentence 1</label>
+
+    <input type="radio" id="audio2" name="sentence" value="./assests/media1/audio2.mp3">
+    <label for="audio2">Sentence 2</label>
+
+    <input type="radio" id="audio3" name="sentence" value="./assests/media1/audio3.mp3">
+    <label for="audio3">Sentence 3</label>
+
+    <input type="radio" id="audio4" name="sentence" value="./assests/media2/audio4.mp3">
+    <label for="audio4">Sentence 4</label>
+
+    <input type="radio" id="audio5" name="sentence" value="./assests/media2/audio5.mp3">
+    <label for="audio5">Sentence 5</label>
+  </div>
+
+  <div id="audioplayer">
+    <audio id="audio" controls></audio>
+    <p id="sentence-text"></p>
+    <p id="gender-text"></p>
+  </div>
+
+  <script>
+    // Get the audio element and sentence text element
+    const audioElement = document.getElementById('audio');
+    const sentenceTextElement = document.getElementById('sentence-text');
+    const genderElement = document.getElementById('gender-text');
+
+    // Add event listeners to the radio buttons
+    const radioButtons = document.querySelectorAll('input[type="radio"]');
+    radioButtons.forEach((radio) => {
+      radio.addEventListener('change', handleRadioChange);
+    });
+
+    // Function to handle radio button change
+    function handleRadioChange(event) {
+      const selectedValue = event.target.value;
+      let sentenceText = '';
+      let gender = '';
+
+      if (selectedValue === './assests/media1/audio1.mp3') {
+        sentenceText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit.';
+        gender = 'Male';
+      } else if (selectedValue === './assests/media1/audio2.mp3') {
+        sentenceText = 'Ipsum dolor sit amet consectetur adipisicing elit.';
+      } else if (selectedValue === './assests/media1/audio3.mp3') {
+        sentenceText = 'Dolor sit amet consectetur adipisicing elit.';
+      } else if (selectedValue === './assests/media2/audio4.mp3') {
+        sentenceText = 'Lorem ipsum dolor sit amet consectetur.';
+      } else if (selectedValue === './assests/media2/audio5.mp3') {
+        sentenceText = 'Lorem ipsum dolor sit amet consectetur elit.';
+      }
+
+      audioElement.src = selectedValue;
+      sentenceTextElement.textContent = sentenceText;
+      audioElement.play();
+    }
+  </script>
+</body>
+</html>
