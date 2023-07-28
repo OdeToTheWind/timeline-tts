@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Select Sentence</th>
+            <th>Audio</th>
+        </tr>
+        <tr>
+          <td>
+            <select id="sentenceDropdown" onchange="playAudio()">
+              <option value="">Select Sentence</option>
+              <option value="./assests/media1/audio1.mp3">Sentence 1</option>
+              <option value="./assests/media1/audio2.mp3">Sentence 2</option>
+              <option value="./assests/media1/audio3.mp3">Sentence 3</option>
+              <option value="./assests/media2/audio4.mp3">Sentence 4</option>
+              <option value="./assests/media2/audio5.mp3">Sentence 5</option>
+            </select>
+          </td>
+          <td>
+            <div class="audioPlayer">
+              <audio id="audio" controls>
+                <!-- Audio source will be set dynamically in JavaScript -->
+              </audio>
+              
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <p id="sentence-text"></p>
+            <p id="gender-text"></p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="audioPlayer">
+              <audio id="audio2" controls>
+                <!-- Audio source will be set dynamically in JavaScript -->
+              </audio>
+            </div>
+          </td>
+
+        </tr>
+      </table>
+
+    <script>
+    // Get the audio element and sentence text element
+    const audioElement1 = document.getElementById('audio');
+    const audioElement2 = document.getElementById('audio2');
+
+    const sentenceTextElement = document.getElementById('sentence-text');
+    const genderTextElement = document.getElementById('gender-text');
+
+    // Function to handle radio button change
+    function playAudio() {
+        const dropdown = document.getElementById('sentenceDropdown');
+        const selectedValue = dropdown.value;
+        let sentenceText = '';
+        let genderText = '';
+
+      if (selectedValue === './assests/media1/audio1.mp3') {
+        sentenceText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit.';
+        genderText = 'Male';
+      } else if (selectedValue === './assests/media1/audio2.mp3') {
+        sentenceText = 'Ipsum dolor sit amet consectetur adipisicing elit.';
+        genderText = 'Male';
+      } else if (selectedValue === './assests/media1/audio3.mp3') {
+        sentenceText = 'Dolor sit amet consectetur adipisicing elit.';
+        genderText = 'Male';
+      } else if (selectedValue === './assests/media2/audio4.mp3') {
+        sentenceText = 'Lorem ipsum dolor sit amet consectetur.';
+        genderText = 'Male';
+      } else if (selectedValue === './assests/media2/audio5.mp3') {
+        sentenceText = 'Lorem ipsum dolor sit amet consectetur elit.';
+        genderText = 'Male';
+      }
+
+      audioElement1.src = selectedValue;
+      audioElement2.src = selectedValue;
+      sentenceTextElement.textContent = sentenceText;
+      genderTextElement.textContent = genderText;
+      // Set the default state of the audio elements to paused
+      audioElement1.playState = 'paused';
+      audioElement2.playState = 'paused';
+  }
+
+      // Add an event listener to the audio elements to play the audio when clicked
+      audioElement1.addEventListener('click', function() {
+        audioElement1.play();
+      });
+
+      audioElement2.addEventListener('click', function() {
+        audioElement2.play();
+      });
+      </script>
+</body>
+</html>

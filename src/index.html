@@ -9,11 +9,25 @@
 	<script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
 </head>
 <body>
-	
-
 
 <h2>Evolution of TTS</h2>
 <h1>Evolution of Text-to-Speech</h1>
+<div>
+	<select id="sentenceDropdown" onchange="playAudio()">
+		<option value="">Select Sentence</option>
+		<option value="S1">Sentence 1</option>
+		<option value="S2">Sentence 2</option>
+		<option value="S3">Sentence 3</option>
+		<option value="S4">Sentence 4</option>
+		<option value="S5">Sentence 5</option>
+		<option value="S6">Sentence 6</option>
+		<option value="S7">Sentence 7</option>
+		<option value="S8">Sentence 8</option>
+		<option value="S9">Sentence 9</option>
+		<option value="S10">Sentence 10</option>
+  	</select>
+</div>
+
 
 <div class="timeline">
 
@@ -31,30 +45,24 @@
 				GNU speech: Articulatory
 			</div>
 			<div class="timeline__event__description">
-				<p>Description</p>
-				<p>Please select Sentence Number:</p>
-				<div class="radio-row">
-					<input type="radio" id="audio1" name="sentence" value="./assests/media1/audio1.mp3">
-					<label for="audio1">Sentence 1</label>
-
-					<input type="radio" id="audio2" name="sentence" value="./assests/media1/audio2.mp3">
-					<label for="audio2">Sentence 2</label>
-
-					<input type="radio" id="audio3" name="sentence" value="./assests/media1/audio3.mp3">
-					<label for="audio3">Sentence 3</label>
-
-					<input type="radio" id="audio4" name="sentence" value="./assests/media2/audio4.mp3">
-					<label for="audio4">Sentence 4</label>
-
-					<input type="radio" id="audio5" name="sentence" value="./assests/media2/audio5.mp3">
-					<label for="audio5">Sentence 5</label>
+				<p>Description
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas debitis eveniet 
+					unde recusandae distinctio dicta saepe odit natus iste similique maxime earum amet at, 
+					necessitatibus iusto libero, voluptatum delectus fugit repudiandae maiores praesentium 
+					itaque aperiam porro. Sequi praesentium provident porro quis blanditiis, debitis, qui 
+					aperiam quo maiores aut quasi iure.
+				</p>
+				<div class="audioPlayer">
+					<audio id="audio" controls>
+					  <!-- Audio source will be set dynamically in JavaScript -->
+					</audio>
+					
 				</div>
-
-				<div id="audioplayer">
-					<audio id="audio" controls></audio>
+				<div class="textbody">
+					<!-- Text source will be set dynamically in JavaScript -->
 					<p id="sentence-text"></p>
+					<p id="gender-text"></p>
 				</div>
-
 			</div>
 		</div>
 	</div>
@@ -67,14 +75,31 @@
 
 		</div>
 		<div class="timeline__event__date">
-			June 1986
+			1980s
 		</div>
 		<div class="timeline__event__content">
 			<div class="timeline__event__title">
-				Super Mario Bros: The Lost Levels
+				eSpeak: Formant synthesis
 			</div>
 			<div class="timeline__event__description">
-				<p>Description</p>
+				<p>Description
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas debitis eveniet 
+					unde recusandae distinctio dicta saepe odit natus iste similique maxime earum amet at, 
+					necessitatibus iusto libero, voluptatum delectus fugit repudiandae maiores praesentium 
+					itaque aperiam porro. Sequi praesentium provident porro quis blanditiis, debitis, qui 
+					aperiam quo maiores aut quasi iure.
+				</p>
+				<div class="audioPlayer">
+					<audio id="audio" controls>
+					  <!-- Audio source will be set dynamically in JavaScript -->
+					</audio>
+					
+				</div>
+				<div class="textbody">
+					<!-- Text source will be set dynamically in JavaScript -->
+					<p id="sentence-text"></p>
+					<p id="gender-text"></p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -87,14 +112,31 @@
 
 		</div>
 		<div class="timeline__event__date">
-			October 1988
+			1990s
 		</div>
 		<div class="timeline__event__content">
 			<div class="timeline__event__title">
-				Super Mario Bros. 2
+				Festival: Diphone concatenative
 			</div>
 			<div class="timeline__event__description">
-				<p>Description</p>
+				<p>Description
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas debitis eveniet 
+					unde recusandae distinctio dicta saepe odit natus iste similique maxime earum amet at, 
+					necessitatibus iusto libero, voluptatum delectus fugit repudiandae maiores praesentium 
+					itaque aperiam porro. Sequi praesentium provident porro quis blanditiis, debitis, qui 
+					aperiam quo maiores aut quasi iure.
+				</p>
+				<div class="audioPlayer">
+					<audio id="audio" controls>
+					  <!-- Audio source will be set dynamically in JavaScript -->
+					</audio>
+					
+				</div>
+				<div class="textbody">
+					<!-- Text source will be set dynamically in JavaScript -->
+					<p id="sentence-text"></p>
+					<p id="gender-text"></p>
+				</div>
 			</div>
 
 		</div>
@@ -108,14 +150,31 @@
 
 		</div>
 		<div class="timeline__event__date">
-			October 1988
+			1990s
 		</div>
 		<div class="timeline__event__content">
 			<div class="timeline__event__title">
-				Super Mario Bros. 3
+				Festival: : Unit selection concatenative
 			</div>
 			<div class="timeline__event__description">
-				<p>Description</p>
+				<p>Description
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas debitis eveniet 
+					unde recusandae distinctio dicta saepe odit natus iste similique maxime earum amet at, 
+					necessitatibus iusto libero, voluptatum delectus fugit repudiandae maiores praesentium 
+					itaque aperiam porro. Sequi praesentium provident porro quis blanditiis, debitis, qui 
+					aperiam quo maiores aut quasi iure.
+				</p>
+				<div class="audioPlayer">
+					<audio id="audio" controls>
+					  <!-- Audio source will be set dynamically in JavaScript -->
+					</audio>
+					
+				</div>
+				<div class="textbody">
+					<!-- Text source will be set dynamically in JavaScript -->
+					<p id="sentence-text"></p>
+					<p id="gender-text"></p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -127,14 +186,31 @@
 
 		</div>
 		<div class="timeline__event__date">
-			April 1989
+			2005
 		</div>
 		<div class="timeline__event__content ">
 			<div class="timeline__event__title">
-				Super Mario Land
+				HTS: SPSS- HMM speech synthesis
 			</div>
 			<div class="timeline__event__description">
-				<p>Description</p>
+				<p>Description
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas debitis eveniet 
+					unde recusandae distinctio dicta saepe odit natus iste similique maxime earum amet at, 
+					necessitatibus iusto libero, voluptatum delectus fugit repudiandae maiores praesentium 
+					itaque aperiam porro. Sequi praesentium provident porro quis blanditiis, debitis, qui 
+					aperiam quo maiores aut quasi iure.
+				</p>
+				<div class="audioPlayer">
+					<audio id="audio" controls>
+					  <!-- Audio source will be set dynamically in JavaScript -->
+					</audio>
+					
+				</div>
+				<div class="textbody">
+					<!-- Text source will be set dynamically in JavaScript -->
+					<p id="sentence-text"></p>
+					<p id="gender-text"></p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -147,14 +223,31 @@
 
 		</div>
 		<div class="timeline__event__date">
-			November 1990
+			2015
 		</div>
 		<div class="timeline__event__content">
 			<div class="timeline__event__title">
-				Super Mario World
+				Merlin: Deep-learning speech synth
 			</div>
 			<div class="timeline__event__description">
-				<p>Description</p>
+				<p>Description
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas debitis eveniet 
+					unde recusandae distinctio dicta saepe odit natus iste similique maxime earum amet at, 
+					necessitatibus iusto libero, voluptatum delectus fugit repudiandae maiores praesentium 
+					itaque aperiam porro. Sequi praesentium provident porro quis blanditiis, debitis, qui 
+					aperiam quo maiores aut quasi iure.
+				</p>
+				<div class="audioPlayer">
+					<audio id="audio" controls>
+					  <!-- Audio source will be set dynamically in JavaScript -->
+					</audio>
+					
+				</div>
+				<div class="textbody">
+					<!-- Text source will be set dynamically in JavaScript -->
+					<p id="sentence-text"></p>
+					<p id="gender-text"></p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -167,14 +260,31 @@
 
 		</div>
 		<div class="timeline__event__date">
-			October 1992
+			2018
 		</div>
 		<div class="timeline__event__content">
 			<div class="timeline__event__title">
-				Super Mario Land: 6 Golden Coins
+				Tacotron2 + ParallelWaveGAN
 			</div>
 			<div class="timeline__event__description">
-				<p>Description</p>
+				<p>Description
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas debitis eveniet 
+					unde recusandae distinctio dicta saepe odit natus iste similique maxime earum amet at, 
+					necessitatibus iusto libero, voluptatum delectus fugit repudiandae maiores praesentium 
+					itaque aperiam porro. Sequi praesentium provident porro quis blanditiis, debitis, qui 
+					aperiam quo maiores aut quasi iure.
+				</p>
+				<div class="audioPlayer">
+					<audio id="audio" controls>
+					  <!-- Audio source will be set dynamically in JavaScript -->
+					</audio>
+					
+				</div>
+				<div class="textbody">
+					<!-- Text source will be set dynamically in JavaScript -->
+					<p id="sentence-text"></p>
+					<p id="gender-text"></p>
+				</div>
 			</div>
 
 		</div>
@@ -188,22 +298,39 @@
 
 		</div>
 		<div class="timeline__event__date">
-			August 1995
+			2021
 		</div>
 		<div class="timeline__event__content">
 			<div class="timeline__event__title">
-				Super Mario World 2: Yoshi's Island
+				FastSpeech2 + ParallelWaveGAN
 			</div>
 			<div class="timeline__event__description">
-				<p>Description</p>
+				<p>Description
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas debitis eveniet 
+					unde recusandae distinctio dicta saepe odit natus iste similique maxime earum amet at, 
+					necessitatibus iusto libero, voluptatum delectus fugit repudiandae maiores praesentium 
+					itaque aperiam porro. Sequi praesentium provident porro quis blanditiis, debitis, qui 
+					aperiam quo maiores aut quasi iure.
+				</p>
+				<div class="audioPlayer">
+					<audio id="audio" controls>
+					  <!-- Audio source will be set dynamically in JavaScript -->
+					</audio>
+					
+				</div>
+				<div class="textbody">
+					<!-- Text source will be set dynamically in JavaScript -->
+					<p id="sentence-text"></p>
+					<p id="gender-text"></p>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<!--first-->
+<!-- 	
 	<div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
 		<div class="timeline__event__icon ">
-			<!-- <i class="lni-sport"></i>-->
+			 
 
 		</div>
 		<div class="timeline__event__date">
@@ -219,11 +346,11 @@
 		</div>
 	</div>
 
-	<!--second-->
+	
 
 	<div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
 		<div class="timeline__event__icon">
-			<!-- <i class="lni-sport"></i>-->
+			 
 
 		</div>
 		<div class="timeline__event__date">
@@ -239,11 +366,11 @@
 		</div>
 	</div>
 
-	<!--third-->
+	
 
 	<div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
 		<div class="timeline__event__icon">
-			<!-- <i class="lni-sport"></i>-->
+			 
 
 		</div>
 		<div class="timeline__event__date">
@@ -260,11 +387,11 @@
 		</div>
 	</div>
 
-	<!--forth-->
+
 
 	<div class="timeline__event animated fadeInUp timeline__event--type1">
 		<div class="timeline__event__icon">
-			<!-- <i class="lni-sport"></i>-->
+			 
 
 		</div>
 		<div class="timeline__event__date">
@@ -280,10 +407,10 @@
 		</div>
 	</div>
 
-	<!--first-->
+	
 	<div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
 		<div class="timeline__event__icon ">
-			<!-- <i class="lni-sport"></i>-->
+			 
 
 		</div>
 		<div class="timeline__event__date">
@@ -299,11 +426,10 @@
 		</div>
 	</div>
 
-	<!--second-->
 
 	<div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
 		<div class="timeline__event__icon">
-			<!-- <i class="lni-sport"></i>-->
+			 
 
 		</div>
 		<div class="timeline__event__date">
@@ -319,11 +445,10 @@
 		</div>
 	</div>
 
-	<!--third-->
 
 	<div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
 		<div class="timeline__event__icon">
-			<!-- <i class="lni-sport"></i>-->
+			 
 
 		</div>
 		<div class="timeline__event__date">
@@ -340,11 +465,10 @@
 		</div>
 	</div>
 
-	<!--forth-->
 
 	<div class="timeline__event animated fadeInUp timeline__event--type1">
 		<div class="timeline__event__icon">
-			<!-- <i class="lni-sport"></i>-->
+			 
 
 		</div>
 		<div class="timeline__event__date">
@@ -360,10 +484,9 @@
 		</div>
 	</div>
 
-	<!--first-->
 	<div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
 		<div class="timeline__event__icon ">
-			<!-- <i class="lni-sport"></i>-->
+			 
 
 		</div>
 		<div class="timeline__event__date">
@@ -379,11 +502,10 @@
 		</div>
 	</div>
 
-	<!--second-->
 
 	<div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
 		<div class="timeline__event__icon">
-			<!-- <i class="lni-sport"></i>-->
+			 
 
 		</div>
 		<div class="timeline__event__date">
@@ -399,11 +521,10 @@
 		</div>
 	</div>
 
-	<!--third-->
 
 	<div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
 		<div class="timeline__event__icon">
-			<!-- <i class="lni-sport"></i>-->
+			 
 
 		</div>
 		<div class="timeline__event__date">
@@ -420,11 +541,10 @@
 		</div>
 	</div>
 
-	<!--forth-->
 
 	<div class="timeline__event animated fadeInUp timeline__event--type1">
 		<div class="timeline__event__icon">
-			<!-- <i class="lni-sport"></i>-->
+			 
 
 		</div>
 		<div class="timeline__event__date">
@@ -439,11 +559,10 @@
 			</div>
 		</div>
 	</div>
-
-	<!--first-->
+	
 	<div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
 		<div class="timeline__event__icon ">
-			<!-- <i class="lni-sport"></i>-->
+			 
 
 		</div>
 		<div class="timeline__event__date">
@@ -459,11 +578,10 @@
 		</div>
 	</div>
 
-	<!--second-->
 
 	<div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
 		<div class="timeline__event__icon">
-			<!-- <i class="lni-sport"></i>-->
+			 
 
 		</div>
 		<div class="timeline__event__date">
@@ -479,11 +597,10 @@
 		</div>
 	</div>
 
-	<!--third-->
 
 	<div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
 		<div class="timeline__event__icon">
-			<!-- <i class="lni-sport"></i>-->
+			 
 
 		</div>
 		<div class="timeline__event__date">
@@ -499,11 +616,11 @@
 
 		</div>
 	</div>
-	<!--forth-->
+	
 
 	<div class="timeline__event animated fadeInUp timeline__event--type1">
 		<div class="timeline__event__icon">
-			<!-- <i class="lni-sport"></i>-->
+			 
 
 		</div>
 		<div class="timeline__event__date">
@@ -517,11 +634,11 @@
 				<p>Description</p>
 			</div>
 		</div>
-	</div>
+	</div>  -->
 
 </div>
 
-	<script>
+	<!-- <script>
 		// Get the audio element and sentence text element
 		const audioElement = document.getElementById('audio');
 		const sentenceTextElement = document.getElementById('sentence-text');
@@ -553,6 +670,42 @@
 		sentenceTextElement.textContent = sentenceText;
 		audioElement.play();
 		}
-	</script>
+	</script> -->
+	<script>
+		// Get the audio element and sentence text element
+		const audioElement = document.getElementById('audio');
+		const sentenceTextElement = document.getElementById('sentence-text');
+		const genderTextElement = document.getElementById('gender-text');
+	
+		// Function to handle radio button change
+		function playAudio() {
+			const dropdown = document.getElementById('sentenceDropdown');
+			const selectedValue = dropdown.value;
+			let sentenceText = '';
+			let genderText = '';
+	
+		  if (selectedValue === './assests/media1/audio1.mp3') {
+			sentenceText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit.';
+			genderText = 'Male';
+		  } else if (selectedValue === './assests/media1/audio2.mp3') {
+			sentenceText = 'Ipsum dolor sit amet consectetur adipisicing elit.';
+			genderText = 'Male';
+		  } else if (selectedValue === './assests/media1/audio3.mp3') {
+			sentenceText = 'Dolor sit amet consectetur adipisicing elit.';
+			genderText = 'Male';
+		  } else if (selectedValue === './assests/media2/audio4.mp3') {
+			sentenceText = 'Lorem ipsum dolor sit amet consectetur.';
+			genderText = 'Male';
+		  } else if (selectedValue === './assests/media2/audio5.mp3') {
+			sentenceText = 'Lorem ipsum dolor sit amet consectetur elit.';
+			genderText = 'Male';
+		  }
+	
+		  audioElement.src = selectedValue;
+		  sentenceTextElement.textContent = sentenceText;
+		  genderTextElement.textContent = genderText;
+		  audioElement.play();
+		}
+		  </script>
 </body>
 </html>

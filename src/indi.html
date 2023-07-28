@@ -46,12 +46,11 @@
     <p id="sentence-text"></p>
     <p id="gender-text"></p>
   </div>
-
   <script>
     // Get the audio element and sentence text element
     const audioElement = document.getElementById('audio');
     const sentenceTextElement = document.getElementById('sentence-text');
-    const genderElement = document.getElementById('gender-text');
+    const genderTextElement = document.getElementById('gender-text');
 
     // Add event listeners to the radio buttons
     const radioButtons = document.querySelectorAll('input[type="radio"]');
@@ -63,25 +62,74 @@
     function handleRadioChange(event) {
       const selectedValue = event.target.value;
       let sentenceText = '';
-      let gender = '';
+      let genderText = '';
 
       if (selectedValue === './assests/media1/audio1.mp3') {
         sentenceText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit.';
-        gender = 'Male';
+        genderText = 'Male';
       } else if (selectedValue === './assests/media1/audio2.mp3') {
         sentenceText = 'Ipsum dolor sit amet consectetur adipisicing elit.';
+        genderText = 'Male';
       } else if (selectedValue === './assests/media1/audio3.mp3') {
         sentenceText = 'Dolor sit amet consectetur adipisicing elit.';
+        genderText = 'Male';
       } else if (selectedValue === './assests/media2/audio4.mp3') {
         sentenceText = 'Lorem ipsum dolor sit amet consectetur.';
+        genderText = 'Male';
       } else if (selectedValue === './assests/media2/audio5.mp3') {
         sentenceText = 'Lorem ipsum dolor sit amet consectetur elit.';
+        genderText = 'Male';
       }
 
       audioElement.src = selectedValue;
       sentenceTextElement.textContent = sentenceText;
+      genderTextElement.textContent = genderText;
       audioElement.play();
     }
+
+
+  //   function playAudio() {
+  // const dropdown = document.getElementById('sentenceDropdown');
+  // const selectedValue = dropdown.value;
+  // let audioSrc = '';
+  // let sentenceDescription = '';
+  // let audioGender = '';
+
+  // switch (selectedValue) {
+  //   case '1':
+  //     audioSrc = './assests/media1/audio1.mp3';
+  //     sentenceDescription = 'Lorem ipsum dolor sit amet consectetur adipisicing elit.';
+  //     audioGender = 'Male';
+  //     break;
+  //   case '2':
+  //     audioSrc = './assests/media1/audio2.mp3';
+  //     sentenceDescription = 'Ipsum dolor sit amet consectetur adipisicing elit.';
+  //     audioGender = 'Female';
+  //     break;
+  //   case '3':
+  //     audioSrc = './assests/media1/audio3.mp3';
+  //     sentenceDescription = 'Dolor sit amet consectetur adipisicing elit.';
+  //     audioGender = 'Male';
+  //     break;
+  //   case '4':
+  //     audioSrc = './assests/media1/audio4.mp3';
+  //     sentenceDescription = 'Lorem ipsum dolor sit amet consectetur.';
+  //     audioGender = 'Male';
+  //     break;
+  //   case '5':
+  //     audioSrc = './assests/media1/audio5.mp3';
+  //     sentenceDescription = 'Lorem ipsum dolor sit amet consectetur elit.';
+  //     audioGender = 'Female';
+  //     break;
+  //   default:
+  //     break;
+  // }
+
+  // const audioPlayer = document.getElementById('audio');
+  // audioPlayer.src = audioSrc;
+  //   }
+
+  
   </script>
 </body>
 </html>
